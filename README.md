@@ -13,17 +13,17 @@ https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API 
 After registering for a new API key, you may need to wait up to 2 hours for that API key to activate.
 For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keys Links to an external site..
 
-##IMPORTANT
+## IMPORTANT
 Make sure to download and unzip the starter code files and make your own repository with the starter code.
 Before you start, download the starter code Links to an external site..
 
-##User Story
+## User Story
 
 AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 
-##Acceptance Criteria
+## Acceptance Criteria
 
 GIVEN a weather dashboard with form inputs
 WHEN I search for a city
