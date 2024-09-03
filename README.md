@@ -48,11 +48,13 @@ The following API routes should be created:
 GET /api/weather/history should read the searchHistory.json file and return all saved cities as JSON.
 POST /api/weather should receive a city name to save on the request body, add it to the searchHistory.json file, and then return associated weather data to the client. You'll need to find a way to give each city name a unique id when it's saved (look into npm packages that could do this for you).
 Refer to the Full-Stack Blog on deploying to Render Links to an external site. and the Render documentation on setting environment variables Links to an external site..
-Hints
+
+## Hints
 
 Using the 5-day weather forecast API, you'll notice that you'll need to pass in coordinates instead of just a city name. Using the OpenWeatherMap APIs, how could we retrieve geographical coordinates given a city name?
 How could we make the OpenWeather API calls server-side, parse the data, and then send the parsed data client-side?
-Bonus
+
+## Bonus
 
 This application offers the DELETE functionality on the front end. As a bonus, try to add the DELETE route to the application using the following guideline:
 DELETE /api/weather/history/:id should receive a route parameter that contains the id of a city name to delete. To delete a city, you'll need to read all the cities from the searchHistory.json file, remove the city with the given id property, and then rewrite the cities to the searchHistory.json file.
