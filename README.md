@@ -39,6 +39,9 @@ THEN I am presented with a 5-day forecast that displays the date, an icon repres
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
 
+## License
+MIT
+
 ## Getting Started
 
 On the back end, the application should include a searchHistory.json file that will be used to store and retrieve cities using the fs module.
