@@ -7,8 +7,12 @@ Weather Dashboard
 
 The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Render.
 Use the 5-day weather forecast API Links to an external site. to retrieve weather data for cities.
-The base URL should look like the following:
+
+
+## The base URL should look like the following:
 https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
+
+
 
 After registering for a new API key, you may need to wait up to 2 hours for that API key to activate.
 For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keys Links to an external site..
