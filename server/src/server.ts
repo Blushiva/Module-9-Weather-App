@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 // TODO: Serve static files of entire client dist folder
 //added ../../ to the path to get to the client folder
-app.use(express.static('../../client/dist'));
+app.use(express.static('../client/dist'));
 
 // TODO: Implement middleware for parsing JSON and url encoded form data
 app.use(express.json());
