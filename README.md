@@ -1,4 +1,4 @@
-# Module-9-Weather-App
+# Module 9 Weather App
  Weather Dashboard
 
 External APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in their context, frequently consuming this data via a server.
@@ -10,6 +10,7 @@ Use the 5-day weather forecast API Links to an external site. to retrieve weathe
 
 
 ## The base URL should look like the following:
+
 https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}
 
 
@@ -17,7 +18,7 @@ https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API 
 After registering for a new API key, you may need to wait up to 2 hours for that API key to activate.
 For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keys Links to an external site..
 
-## IMPORTANT
+## IMPORTANT THINGS TO DO FOR YOUR APP
 Make sure to download and unzip the starter code files and make your own repository with the starter code.
 Before you start, download the starter code Links to an external site..
 
