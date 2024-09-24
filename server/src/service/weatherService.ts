@@ -35,22 +35,20 @@ class WeatherService {
     apiKey: string;
     cityName: string;
 
-
+//3f5ebc304658be2d2264d8e8b1683199 api key from weather URL
   constructor(baseURL: string, apiKey: string, cityName: string) {
     this.baseURL = baseURL ?? 'https://api.openweathermap.org/data/2.5/weather';
     this.apiKey = apiKey ??  '3f5ebc304658be2d2264d8e8b1683199';
     this.cityName = cityName;
   }
+
   // Fetch the location data from the API
   // TODO: Create destructureLocationData method
 
   private async fetchLocationData(query:string) {
-  //3f5ebc304658be2d2264d8e8b1683199 api key from weather URL
-  const response = await fetch(this.baseURL);
-
-
+    const response = await fetch(this.baseURL);
     private buildGeocodeQuery(): string {
-        return `${this.baseURL}?q=${this.cityName}&appid=${this.apiKey}`;
+    return `${this.baseURL}?q=${this.cityName}&appid=${this.apiKey}`;
     }
 
 
@@ -85,7 +83,15 @@ class WeatherService {
     const currentWeather = new WeatherService(weather[0].id, weather[0].main, weather[0].description, weather[0].icon);
      }
   // TODO: Complete buildForecastArray method
-  // private buildForecastArray(currentWeather: Weather, weatherData: any[]) {}
+  private buildForecastArray(currentWeather: Weather, weatherData: any[]) {
+    const forecastArray: Weather[] = [];
+    forecastArray.push(currentWeather);
+    weatherData.forEach((weather: any) => {
+      const newWeather = new WeatherService(weather.id, weather.main, weather.description, weather.icon);
+      forecastArray.push(newWeather);
+    });
+    return forecastArray;
+  }
   // TODO: Complete getWeatherForCity method
   // async getWeatherForCity(city: string) {}
   async getWeatherForCity(city: string) {
@@ -94,6 +100,6 @@ class WeatherService {
     const URL = '${this.baseURL}?q=${city}&appid=${this.apiKey}';
     const weatherForCity  = await fetch(URL);
     console.log(weatherForCity);
-export default new weatherService('https://api.openweathermap.org/data/2.5/weather', '3f5ebc304658be2d2264d8e8b1683199', 'London');
+export default new weatherService('https://api.openweathermap.org/data/2.5/weather', '3f5ebc304658be2d2264d8e8b1683199', 'Saint Paul');
 
 export default new WeatherService();
