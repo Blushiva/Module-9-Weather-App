@@ -64,7 +64,7 @@ class WeatherService {
     const fetchAndDestructureLocationData = async () => {
         const response = await fetch(this.buildGeocodeQuery());
         const data = await response.json();
-        const coordinates = this.destructureLocationData(data);
+        const coordinates = this.fetchAndDestructureLocationData();
         return coordinates;
     }
 
