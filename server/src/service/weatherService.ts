@@ -61,12 +61,15 @@ class WeatherService {
   }
   // private buildWeatherQuery(coordinates: Coordinates): string {}
   // TODO: Create fetchAndDestructureLocationData method
-    const fetchAndDestructureLocationData = async () => {
-        const response = await fetch(this.buildGeocodeQuery());
-        const data = await response.json();
-        const coordinates = this.fetchAndDestructureLocationData();
-        return coordinates;
-    }
+  private async fetchAndDestructureLocationData(): Promise<Coordinates> {
+    const response = await fetch(this.buildGeocodeQuery());
+    const data = await response.json();
+    const coordinates: Coordinates = {
+      lat: data.coord.lat,
+      lon: data.coord.lon
+    };
+    return coordinates;
+  }
 
   // private async fetchAndDestructureLocationData() {}
   // TODO: Create fetchWeatherData method
@@ -77,7 +80,10 @@ class WeatherService {
   }
   // private async fetchWeatherData(coordinates: Coordinates) {}
   // TODO: Build parseCurrentWeather method
-  // private parseCurrentWeather(response: any) {}
+     private parseCurrentWeather(response: any) {
+    const { main, weather } = response;
+    const currentWeather = new WeatherService(weather[0].id, weather[0].main, weather[0].description, weather[0].icon);
+     }
   // TODO: Complete buildForecastArray method
   // private buildForecastArray(currentWeather: Weather, weatherData: any[]) {}
   // TODO: Complete getWeatherForCity method
