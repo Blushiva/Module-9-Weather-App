@@ -16,12 +16,14 @@ class WeatherService {
     description:string;
     icon:string;
 
-    constructor(id, main, description, icon){
+    constructor(id: number, main: string, description: string, icon: string){
         this.id = id;
         this.main = main;
         this.description = description;
         this.icon = icon;
     }
+}
+
     const myWeather = new WeatherService(1, 'Clouds', 'overcast clouds', '04d');
     console.log(myWeather);
 
@@ -47,12 +49,25 @@ class WeatherService {
   const response = await fetch(this.baseURL);
 
 
-  // private destructureLocationData(locationData: Coordinates): Coordinates {}
-  // TODO: Create buildGeocodeQuery method
-  // private buildGeocodeQuery(): string {}
+    private buildGeocodeQuery(): string {
+        return `${this.baseURL}?q=${this.cityName}&appid=${this.apiKey}`;
+    }
+
+
   // TODO: Create buildWeatherQuery method
+
+  private buildWeatherQuery(coordinates: Coordinates): string {
+    return `${this.baseURL}?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${this.apiKey}`;
+  }
   // private buildWeatherQuery(coordinates: Coordinates): string {}
   // TODO: Create fetchAndDestructureLocationData method
+    const fetchAndDestructureLocationData = async () => {
+        const response = await fetch(this.buildGeocodeQuery());
+        const data = await response.json();
+        const coordinates = this.destructureLocationData(data);
+        return coordinates;
+    }
+
   // private async fetchAndDestructureLocationData() {}
   // TODO: Create fetchWeatherData method
   // private async fetchWeatherData(coordinates: Coordinates) {}
@@ -63,11 +78,11 @@ class WeatherService {
   // TODO: Complete getWeatherForCity method
   // async getWeatherForCity(city: string) {}
   async getWeatherForCity(city: string) {
-    //https://api.openweathermap.org/data/2.5/weather?q=London&appid=3f5ebc304658be2d2264d8e8b1683199 
-    
+    //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
     const URL = '${this.baseURL}?q=${city}&appid=${this.apiKey}';
     const weatherForCity  = await fetch(URL);
     console.log(weatherForCity);
-}
+export default new weatherService('https://api.openweathermap.org/data/2.5/weather', '3f5ebc304658be2d2264d8e8b1683199', 'London');
 
 export default new WeatherService();
