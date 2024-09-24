@@ -8,6 +8,20 @@ Weather Dashboard
 The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Render.
 Use the 5-day weather forecast API Links to an external site. to retrieve weather data for cities.
 
+# Process
+
+# Required Modules/Packages/Files
+
+# Table Of Contents
+
+
+# User Story
+
+AS A traveler
+I WANT to see the weather outlook for multiple cities
+SO THAT I can plan a trip accordingly
+
+
 
 ## The base URL should look like the following:
 
@@ -22,11 +36,7 @@ For more information on how to work with the OpenWeather API, refer to the Full-
 Make sure to download and unzip the starter code files and make your own repository with the starter code.
 Before you start, download the starter code Links to an external site..
 
-## User Story
 
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
 
 ## Acceptance Criteria
 
