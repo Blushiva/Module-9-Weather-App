@@ -9,6 +9,20 @@ The application’s front end has already been created. It's your job to build t
 Use the 5-day weather forecast API Links to an external site. to retrieve weather data for cities.
 
 # Process
+1) Research other apps created by other people and cite them.
+
+2) Figure out what is needed to run the app
+
+3) .env file
+
+4) node file
+
+5) connect all the files
+
+6) go get api key for the weather service
+
+7) 
+
 
 # Required Modules/Packages/Files
 

@@ -8,7 +8,13 @@ const router = Router();
 // TODO: Define route to serve index.html
 router.get('/', (req:any, res:any) => {
   res.sendFile(path.join(__dirname, '../../client/dist/index.html'));
-  readFile(path.join(fullPath, (err, data) => {
-    data.
+  readFile(fullpath, 'utf8', (err, data) => {
+    if (err) {
+      res.status(500).send('Error reading file');
+        return;
+      }
+      res.send(data);
+    });
+  });
 
 export default router;
