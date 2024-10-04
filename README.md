@@ -44,7 +44,6 @@ SO THAT I can plan a trip accordingly
 * node.js
 * .env
 * Vite
-* Postgres SQL
 
 # License
 
