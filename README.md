@@ -16,6 +16,21 @@ AS A traveler
 I WANT to see the weather outlook for multiple cities
 SO THAT I can plan a trip accordingly
 
+# Table Of Contents
+
+- [Description](#description)
+- [Process](#Process)
+- [User Story]()
+- [Acceptance Criteria]()
+- [Table of Contents](#table-of-contents)
+- [Video Demonstration]()
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Contributing Resources]()
+- [Questions](#questions)
+- [CLASS REQUIREMENTS]()
+
 # Process
 
 1) Research other apps created by other people and cite them.
@@ -49,21 +64,6 @@ SO THAT I can plan a trip accordingly
 
 MIT
 
-
-# Table Of Contents
-
-- [Description](#description)
-- [Process](#Process)
-- [User Story]()
-- [Acceptance Criteria]()
-- [Table of Contents](#table-of-contents)
-- [Video Demonstration]()
-- [Installation](#installation)
-- [Usage](#usage)
-- [Testing](#testing)
-- [Contributing Resources]()
-- [Questions](#questions)
-- [CLASS REQUIREMENTS]()
 
 # Installation
 
