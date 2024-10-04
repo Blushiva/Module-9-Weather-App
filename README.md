@@ -41,10 +41,10 @@ SO THAT I can plan a trip accordingly
 
 # Required Modules/Packages/Files
 
-node.js
-.env
-Vite
-Postgres SQL
+* node.js
+* .env
+* Vite
+* Postgres SQL
 
 # License
 
