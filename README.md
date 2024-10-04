@@ -20,10 +20,10 @@ SO THAT I can plan a trip accordingly
 
 - [Description](#description)
 - [Process](#Process)
-- [User Story]()
-- [Acceptance Criteria]()
+- [User Story](https://github.com/Blushiva/Module-9-Weather-App/tree/main?tab=readme-ov-file#user-story)
+- [Acceptance Criteria](https://github.com/Blushiva/Module-9-Weather-App/tree/main?tab=readme-ov-file#acceptance-criteria)
 - [Table of Contents](#table-of-contents)
-- [Video Demonstration]()
+- [Video Demonstration](https://github.com/Blushiva/Module-9-Weather-App/tree/main?tab=readme-ov-file#video-demonstration)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Testing](#testing)
@@ -73,6 +73,8 @@ NPM Run/Start
 
 
 # Testing
+
+# Contributing Resources
 
 
 
