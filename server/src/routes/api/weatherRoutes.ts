@@ -2,16 +2,17 @@ import { Router, Request, Response } from 'express';
 ;
 
 import weatherService from '../../service/weatherService.js';
+import HistoryService from '../../service/historyService.js';
 
 const router = Router();
-weatherService = new weatherService('https://api.openweathermap.org/data/2.5/weather', '3f5ebc304658be2d2264d8e8b1683199', 'cityName');
+const weatherAPI = new weatherService('https://api.openweathermap.org/data/2.5/weather', '3f5ebc304658be2d2264d8e8b1683199', 'cityName');
 
-// import HistoryService from '../../service/historyService.js';
+
  
 
 // TODO: POST Request with city name to retrieve weather data
 // error from html routes ts  due to missing imports look further into this
-router.post('/', (req: Request, res: Response) => {
+router.post('/', async(req: Request, res: Response) => {
   console.log(req, res);
   
   // TODO: GET weather data from city name
